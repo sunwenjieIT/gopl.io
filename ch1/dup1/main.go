@@ -18,6 +18,7 @@ func main() {
 	counts := make(map[string]int)
 	input := bufio.NewScanner(os.Stdin)
 	for input.Scan() {
+		if input.Text() == "end" {break}
 		counts[input.Text()]++
 	}
 	// NOTE: ignoring potential errors from input.Err()
@@ -26,6 +27,7 @@ func main() {
 			fmt.Printf("%d\t%s\n", n, line)
 		}
 	}
+
 }
 
 //!-

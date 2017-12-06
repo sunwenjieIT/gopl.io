@@ -14,7 +14,7 @@ import (
 )
 
 var n = flag.Bool("n", false, "omit trailing newline")
-var sep = flag.String("s", " ", "separator")
+var sep = flag.String("ss", " ", "separator")
 
 func main() {
 	flag.Parse()
@@ -25,3 +25,11 @@ func main() {
 }
 
 //!-
+
+
+
+
+
+
+
+
