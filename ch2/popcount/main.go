@@ -7,7 +7,7 @@
 //!+
 package popcount
 
-import "fmt"
+//import "fmt"
 
 // pc[i] is the population count of i.
 var pc [256]byte
@@ -51,7 +51,7 @@ func PopCount(x uint64) int {
 
 	for i = 0; i < 8; i++ {
 		tmp := pc[byte(x>>(i*8))]
-		fmt.Printf("%d\n", tmp)
+		//fmt.Printf("%d\n", tmp)
 		sum += tmp
 	}
 
